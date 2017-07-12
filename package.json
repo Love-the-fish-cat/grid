@@ -1,0 +1,27 @@
+{
+  "name": "grid",
+  "version": "1.0.0",
+  "description": "css grid",
+  "scripts": {
+    "build": "gulp autoprefixer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Love-the-fish-cat/grid.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "flexbox",
+    "grid"
+  ],
+  "author": "lovefishcat",
+  "bugs": {
+    "url": "https://github.com/Love-the-fish-cat/grid/issues"
+  },
+  "homepage": "https://github.com/Love-the-fish-cat/grid#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0"
+  }
+}
