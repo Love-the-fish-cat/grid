@@ -1,4 +1,4 @@
-# grid [![Build Status](https://travis-ci.org/[lovefishcat]/[grid].png)](https://travis-ci.org/[lovefishcat]/[grid])
+# grid [![Build Status](https://travis-ci.org/Love-the-fish-cat/grid.svg?branch=master)](https://travis-ci.org/Love-the-fish-cat/grid)
 css grid use flexbox
 
 ## install dependency
