@@ -1,0 +1,62 @@
+$grid: (2, 4, 6, 8, 10, 12) !default;
+$grid-column-distance: 20px;
+
+@mixin flex {
+    display: flex;
+}
+
+.grid {
+    @include flex;
+}
+
+.grid__column {
+    &:not(:first-child) {
+        margin-left: $grid-column-distance;
+    }
+}
+
+.grid--left {
+    justify-content: flex-start;
+}
+
+.grid--right {
+    justify-content: flex-end;
+}
+
+.grid--center {
+    justify-content: center;
+}
+
+.grid--between {
+    justify-content: space-between;
+}
+
+.grid--around {
+    justify-content: space-around;
+}
+
+.grid--top {
+    align-items: flex-start;
+}
+
+.grid--middle {
+    align-items: center;
+}
+
+.grid--stretch {
+    align-items: stretch;
+}
+
+.grid--baseline {
+    align-items: baseline;
+}
+
+@each $grid-number in $grid {
+    @for $number from 1 through $grid-number {
+        .grid__column--#{$number}-of-#{$grid-number} {
+            width: percentage($number / $grid-number);
+        }
+    }
+}
+
+

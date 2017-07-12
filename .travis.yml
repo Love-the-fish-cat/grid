@@ -1,0 +1,11 @@
+language: node_js
+ 
+node_js:
+    - '6.0.0'
+
+before_script:
+   - npm install -g yarn
+   # yarn install is like npm install
+   - yarn install
+
+script: 'npm run build'
