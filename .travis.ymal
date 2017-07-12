@@ -1,0 +1,11 @@
+language: node_js
+
+before_install:
+    - brew install yarn
+node_js:
+    - '6.0.0'
+
+before_script:
+    - 'npm install'
+
+script: 'npm run build'
